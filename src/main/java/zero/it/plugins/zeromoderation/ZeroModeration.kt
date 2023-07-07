@@ -20,7 +20,6 @@ import kotlin.properties.Delegates
 // DISCALAMER!
 // I fucking hate paper api stuff
 // So if I get something wrong, fuck you
-
 class ZeroModeration : JavaPlugin() {
 
     companion object {

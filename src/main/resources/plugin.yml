@@ -1,0 +1,22 @@
+name: ZeroModeration
+version: '${version}'
+main: zero.it.plugins.zeromoderation.ZeroModeration
+load: STARTUP
+authors: [ NextDev ]
+website: www.zeromc.it
+permissions:
+  zeromod.bypass:
+    default: op
+  zeromod.tester:
+    default: op
+  zeromod.admin:
+    default: op
+commands:
+  zm:
+    aliases: ["zeromod", "zeromoderation", "zemo"]
+    permission: zeromod.admin
+    permission-message: Non hai il permesso di eseguire questo comando
+  zm-test:
+    usage: /zm-test <args>
+    permission: zeromod.tester
+    permission-message: "Non hai il permesso per testare il plugin"
